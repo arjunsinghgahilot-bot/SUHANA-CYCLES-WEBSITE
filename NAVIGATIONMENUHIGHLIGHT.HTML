@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Navbar Highlight</title>
+  <style>
+    /* Basic styles */
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    nav {
+      background-color: #f4f4f4;
+      padding: 10px 20px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+      margin-right: 20px;
+      padding: 6px 10px;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    /* Hover effect */
+    nav a:hover {
+      background-color: #ddd;
+      color: #000;
+    }
+
+    /* Underline the first link */
+    nav a:first-child {
+      border-bottom: 2px solid #3498db;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Contact</a>
+  </nav>
+
+</body>
+</html>

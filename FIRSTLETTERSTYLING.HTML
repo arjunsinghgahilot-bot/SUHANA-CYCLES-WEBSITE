@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>First Letter and First Line Styling</title>
+  <style>
+    p.styled-text::first-letter {
+      font-size: 2.5em;
+      color: darkred;
+      font-weight: bold;
+      float: left;
+      line-height: 1;
+      padding-right: 5px;
+    }
+
+    p.styled-text::first-line {
+      font-weight: bold;
+    }
+
+    p.styled-text {
+      font-family: Georgia, serif;
+      font-size: 1.1em;
+      text-align: justify;
+      margin: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <p class="styled-text">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
+  </p>
+
+</body>
+</html>

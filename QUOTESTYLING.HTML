@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Quote Styling</title>
+  <style>
+    .styled-quote {
+      position: relative;
+      font-style: italic;
+      font-size: 1.2em;
+      margin: 40px;
+      padding: 10px 20px;
+      color: #333;
+    }
+
+    .styled-quote::before {
+      content: "“"; /* Opening quotation mark */
+      font-size: 2em;
+      position: absolute;
+      left: -20px;
+      top: -10px;
+      color: #999;
+    }
+
+    .styled-quote::after {
+      content: "”"; /* Closing quotation mark */
+      font-size: 2em;
+      position: absolute;
+      right: -20px;
+      bottom: -10px;
+      color: #999;
+    }
+  </style>
+</head>
+<body>
+
+  <p class="styled-quote">
+    The only way to do great work is to love what you do.
+  </p>
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Decorative Title</title>
+  <style>
+    h2.decorative-title {
+      position: relative;
+      text-align: center;
+      margin: 40px 0;
+      font-family: Arial, sans-serif;
+    }
+
+    h2.decorative-title::before,
+    h2.decorative-title::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      width: 30%;
+      height: 2px;
+      background-color: #333;
+    }
+
+    h2.decorative-title::before {
+      left: 0;
+    }
+
+    h2.decorative-title::after {
+      right: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <h2 class="decorative-title">Welcome to My Website</h2>
+
+</body>
+</html>

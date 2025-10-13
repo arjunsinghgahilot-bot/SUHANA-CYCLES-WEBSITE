@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Custom Bullets</title>
+  <style>
+    ul.custom-bullets {
+      list-style: none; /* Remove default bullets */
+      padding-left: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    ul.custom-bullets li {
+      position: relative;
+      padding-left: 25px; /* Space for the custom bullet */
+      margin-bottom: 10px;
+    }
+
+    ul.custom-bullets li::before {
+      content: "✅"; /* Change to ⭐, ➤, 🔹, etc. */
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: green;
+      font-size: 1em;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Checklist</h2>
+  <ul class="custom-bullets">
+    <li>Complete project plan</li>
+    <li>Review design mockups</li>
+    <li>Submit final report</li>
+  </ul>
+
+</body>
+</html>

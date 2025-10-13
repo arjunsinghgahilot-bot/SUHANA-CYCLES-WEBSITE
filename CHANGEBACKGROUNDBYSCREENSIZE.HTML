@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Responsive Background Colors</title>
+  <style>
+    /* Default background color */
+    body {
+      margin: 0;
+      height: 100vh;
+      transition: background-color 0.3s ease;
+    }
+
+    /* Mobile: ≤600px */
+    @media (max-width: 600px) {
+      body {
+        background-color: blue;
+      }
+    }
+
+    /* Tablet: 601px - 900px */
+    @media (min-width: 601px) and (max-width: 900px) {
+      body {
+        background-color: green;
+      }
+    }
+
+    /* Laptop: 901px - 1200px */
+    @media (min-width: 901px) and (max-width: 1200px) {
+      body {
+        background-color: yellow;
+      }
+    }
+
+    /* Desktop: ≥1201px */
+    @media (min-width: 1201px) {
+      body {
+        background-color: red;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1 style="text-align:center; padding-top: 40vh; color: white; text-shadow: 1px 1px 2px black;">
+    Resize the window to see the background color change!
+  </h1>
+
+</body>
+</html>
