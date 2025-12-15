@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ambika Leather Manufacturing</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <div class="brand">
+        <a href="index.html">
+        <img src="images/Ambika_Leather_Logo_Resized.png" alt="Ambika Leather Manufacturing" class="logo">
+      </a>
+        <div>
+          <h1>Ambika Leather Manufacturing</h1>
+          <p>Handcrafted leather goods — bags, purses, jackets & more</p>
+        </div>
+      </div>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="category.html">Category</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a class="cta" href="#category">Shop Now</a>
+      </div>
+    </div>
+  </nav>
+
+
+<section id="category">
+<h2 class="section-title">Our Products</h2>
+
+
+<div class="panel">
+<div class="filters">
+<label>Category:
+<select id="filterCategory"><option value="all">All</option></select>
+</label>
+
+
+<label>Sort:
+<select id="sortBy">
+<option value="featured">Featured</option>
+<option value="price-asc">Price: Low → High</option>
+<option value="price-desc">Price: High → Low</option>
+</select>
+</label>
+
+
+<div class="price-wrap">
+<label>Max Price: <span id="priceVal">₹20000</span></label>
+<input id="priceRange" type="range" min="500" max="50000" value="20000">
+</div>
+
+
+<input id="searchBox" placeholder="Search products...">
+</div>
+
+
+<div id="productModal" class="modal" aria-hidden>
+    <div class="modal-card">
+      <div id="modalGallery"></div>
+      <div>
+        <h3 id="modalTitle"></h3>
+        <p id="modalDesc" style="color:var(--muted)"></p>
+        <p class="price" id="modalPrice"></p>
+        <p style="margin-top:8px"><strong>Category:</strong> <span id="modalCat"></span></p>
+        <div style="display:flex;gap:10px;margin-top:12px">
+          <button id="addCart" class="btn btn-primary">Add to Cart</button>
+          <button id="closeModal" class="btn btn-outline">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<script src="script.js"></script>
+</body>
+</html>

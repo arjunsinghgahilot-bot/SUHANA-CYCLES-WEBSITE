@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessories - Surana Cycles</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="logo">
+    <a href="index.html">
+        <img src="images/Logo.jpg" alt="Surana Cycles">
+    </a>
+</div>
+
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="categories.html">Categories</a></li>
+                <li><a href="brands.html">Brands</a></li>
+                <li><a href="accessories.html" class="active">Accessories</a></li>
+                <li><a href="shimano.html">Shimano</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="storelocator.html">Store Locator</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="utility-nav">
+            <a href="user.html" class="user-link">User / Account</a>
+            <button class="mobile-menu-toggle">Menu</button>
+        </div>
+    </header>
+
+    <main class="accessory-page container">
+
+        <section class="page-intro">
+            <h2>Essential Cycling Accessories</h2>
+            <p>From safety gear to performance upgrades, find everything you need to enhance your ride and maintenance routine.</p>
+        </section>
+
+        <div class="category-layout">
+            <aside class="sidebar">
+                <h3>Filter Accessories</h3>
+                
+                <div class="filter-group">
+                    <h4>Type</h4>
+                    <label><input type="checkbox" name="type" value="helmets"> Helmets</label>
+                    <label><input type="checkbox" name="type" value="lights"> Lights & Safety</label>
+                    <label><input type="checkbox" name="type" value="locks"> Locks & Security</label>
+                    <label><input type="checkbox" name="type" value="tools"> Tools & Maintenance</label>
+                    <label><input type="checkbox" name="type" value="storage"> Storage & Bags</label>
+                </div>
+
+                <div class="filter-group">
+                    <h4>Price Range</h4>
+                    <input type="range" min="10" max="1500" value="1500" id="acc-price-range">
+                    <p>Max Price: ₹<span id="current-acc-price">1500</span></p>
+                </div>
+
+                <div class="filter-group">
+                    <h4>Compatibility</h4>
+                    <label><input type="checkbox" name="compatibility" value="road"> Road</label>
+                    <label><input type="checkbox" name="compatibility" value="mtb"> MTB</label>
+                    <label><input type="checkbox" name="compatibility" value="all"> Universal</label>
+                </div>
+
+                <button class="cta-button filter-apply">Apply Filters</button>
+            </aside>
+
+            <section class="product-listing">
+                
+                <h3>Showing 18 Accessories</h3>
+
+                <div class="product-grid">
+                    <article class="product-card">
+                        <img src="images/JavaAeroHelmetBlack1.webp" alt="A lightweight professional cycling helmet">
+                        <h4>Aero Pro Helmet</h4>
+                        <p class="category">Helmets & Safety</p>
+                        <p class="price">₹1290</p>
+                        <a href="#" class="view-details">View Details</a>
+                    </article>
+
+                    <article class="product-card">
+                        <img src="images/Nightridercycle.png" alt="High-powered rechargeable bike light set">
+                        <h4>Night Rider Light Set</h4>
+                        <p class="category">Lights & Safety</p>
+                        <p class="price">₹550</p>
+                        <a href="#" class="view-details">View Details</a>
+                    </article>
+
+                    <article class="product-card">
+                        <img src="images/heavy-duty-bicycle-u-lock.jpg" alt="Heavy-duty U-lock">
+                        <h4>Titan U-Lock</h4>
+                        <p class="category">Locks & Security</p>
+                        <p class="price">₹250</p>
+                        <a href="#" class="view-details">View Details</a>
+                    </article>
+
+                    <article class="product-card">
+                        <img src="images/pngtree-work-and-repair-tools-.png" alt="16-in-1 folding bike multi-tool">
+                        <h4>Trail Repair Multi-Tool</h4>
+                        <p class="category">Tools & Maintenance</p>
+                        <p class="price">₹200</p>
+                        <a href="#" class="view-details">View Details</a>
+                    </article>
+                    
+                    </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- FontAwesome Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+<footer class="site-footer">
+
+    <div class="footer-container">
+
+        <!-- Column 1: About / Branding -->
+        <div class="footer-col">
+            <h2 class="footer-logo">Surana Cycles</h2>
+            <p>
+                Your trusted partner for bicycles, accessories & premium service since 1998.
+            </p>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div class="footer-col">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="categories.html">Categories</a></li>
+                <li><a href="brands.html">Brands</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <!-- Column 3: Contact Info -->
+        <div class="footer-col">
+            <h3>Contact Us</h3>
+            <p><strong>Address:</strong> Surana Cycles, Station Road, Pune, Maharashtra</p>
+            <p><strong>Email:</strong> <a href="mailto:info@suranacycles.com">info@suranacycles.com</a></p>
+            <p><strong>Phone:</strong> <a href="tel:+919876543210">+91 98765 43210</a></p>
+        </div>
+
+        <!-- Column 4: Social -->
+        <div class="footer-col">
+            <h3>Follow Us</h3>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+            </div>
+            <p class="contact-email">info@suranacycles.com</p>
+        </div>
+
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="footer-bottom">
+        © 2025 Surana Cycles | Ride With Passion 🚴‍♂️
+    </div>
+
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

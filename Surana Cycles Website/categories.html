@@ -4,30 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cycles Categories - Surana Cycles</title>
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
     <header class="main-header">
         <div class="logo">
-            <h1>Surana Cycles</h1>
-        </div>
+    <a href="index.html">
+        <img src="images/Logo.jpg" alt="Surana Cycles">
+    </a>
+</div>
+
         <nav class="main-nav">
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="categories.html" class="active">Cycles Categories</a></li>
-                <li><a href="brands.html">Brands</a></li>
-                <li><a href="accessories.html">Accessories</a></li>
-                <li><a href="shimano.html">Shimano</a></li>
-                <li><a href="events.html">Events</a></li>
-                <li><a href="storelocator.html">Store Locator</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href='index.html'>Home</a></li>
+                <li><a class='active' href='categories.html'>Categories</a></li>
+                <li><a href='brands.html'>Brands</a></li>
+                <li><a href='accessories.html'>Accessories</a></li>
+                <li><a href='shimano.html'>Shimano</a></li>
+                <li><a href='events.html'>Events</a></li>
+                <li><a href='storelocator.html'>Store Locator</a></li>
+                <li><a href='blog.html'>Blog</a></li>
+                <li><a href='about.html'>About Us</a></li>
+                <li><a href='contact.html'>Contact Us</a></li>
             </ul>
         </nav>
         <div class="utility-nav">
-            <a href="user.html" class="user-link">User / Account</a>
+            <a class='user-link' href='user'>User / Account</a>
             <button class="mobile-menu-toggle">Menu</button>
         </div>
     </header>
@@ -46,8 +49,8 @@
                 
                 <div class="filter-group">
                     <h4>Price Range</h4>
-                    <input type="range" min="100" max="5000" value="5000" id="price-range">
-                    <p>Max Price: ₹<span id="current-price">5000</span></p>
+                    <input type="range" min="100" max="50000" value="50000" id="price-range">
+                    <p>Max Price: ₹<span id="current-price">50000</span></p>
                 </div>
 
                 <div class="filter-group">
@@ -74,10 +77,10 @@
 
                 <div class="product-grid">
                     <article class="product-card">
-                        <img src="images/road-racer_.jpg" alt="A high-end road racing bike">
+                        <img src="images/ROADRACER.avif" alt="A high-end road racing bike">
                         <h4>Road Racer Pro X</h4>
                         <p class="category">Road Cycling</p>
-                        <p class="price">₹3,500</p>
+                        <p class="price">₹13,500</p>
                         <a href=w"#" class="view-details">View Details</a>
                     </article>
 
@@ -85,7 +88,7 @@
                         <img src="images/TrailblazerPRO1website3-2.webp" alt="A rugged mountain bike">
                         <h4>Trail Blazer 29er</h4>
                         <p class="category">Mountain Biking</p>
-                        <p class="price">₹2,100</p>
+                        <p class="price">₹21,000</p>
                         <a href="#" class="view-details">View Details</a>
                     </article>
 
@@ -93,7 +96,7 @@
                         <img src="images/Essential-features-for-urban-commuter-bikes.jpg" alt="A versatile city hybrid bike">
                         <h4>Urban Commuter Max</h4>
                         <p class="category">Hybrid / City</p>
-                        <p class="price">₹850</p>
+                        <p class="price">₹10000</p>
                         <a href="#" class="view-details">View Details</a>
                     </article>
 
@@ -102,10 +105,61 @@
         </div>
     </main>
 
-    <footer>
-        <p class="container">&copy; 2025 Surana Cycles. All rights reserved.</p>
-    </footer>
+     <!-- FontAwesome Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
-    <script src="script.js"></script>
+<footer class="site-footer">
+
+    <div class="footer-container">
+
+        <!-- Column 1: About / Branding -->
+        <div class="footer-col">
+            <h2 class="footer-logo">Surana Cycles</h2>
+            <p>
+                Your trusted partner for bicycles, accessories & premium service since 1998.
+            </p>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div class="footer-col">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="categories.html">Categories</a></li>
+                <li><a href="brands.html">Brands</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <!-- Column 3: Contact Info -->
+        <div class="footer-col">
+            <h3>Contact Us</h3>
+            <p><strong>Address:</strong> Surana Cycles, Station Road, Pune, Maharashtra</p>
+            <p><strong>Email:</strong> <a href="mailto:info@suranacycles.com">info@suranacycles.com</a></p>
+            <p><strong>Phone:</strong> <a href="tel:+919876543210">+91 98765 43210</a></p>
+        </div>
+
+        <!-- Column 4: Social -->
+        <div class="footer-col">
+            <h3>Follow Us</h3>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+            </div>
+            <p class="contact-email">info@suranacycles.com</p>
+        </div>
+
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="footer-bottom">
+        © 2025 Surana Cycles | Ride With Passion 🚴‍♂️
+    </div>
+
+</footer>
+<script src="script.js"></script>
 </body>
 </html>

@@ -1,22 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTY<html lang="en">
+PE html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>Surana Cycles - Your Ultimate Riding Partner</title>
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="styles.css"/>
 </head>
-<body>
-
     <header class="main-header">
         <div class="logo">
-            <h1>Surana Cycles</h1>
-        </div>
+    <a href="index.html">
+        <img src="images/Logo.jpg" alt="Surana Cycles">
+    </a>
+</div>
 
         <nav class="main-nav">
             <ul>
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="categories.html">Cycles Categories</a></li>
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="categories.html">Categories</a></li>
                 <li><a href="brands.html">Brands</a></li>
                 <li><a href="accessories.html">Accessories</a></li>
                 <li><a href="shimano.html">Shimano</a></li>
@@ -27,84 +27,166 @@
                 <li><a href="contact.html">Contact Us</a></li>
             </ul>
         </nav>
-        
         <div class="utility-nav">
-            <a href="user.html" class="user-link">User / Account</a>
+            <a class="user-link" href="user.html">User / Account</a>
             <button class="mobile-menu-toggle">Menu</button>
         </div>
     </header>
 
     <main>
         <section class="hero-banner container">
-            <div class="hero-content">
-                <h2>Ride Further. Live Better.</h2>
-                <p>Explore the finest selection of road, mountain, and hybrid cycles built for performance and adventure. Surana Cycles is where your journey begins.</p>
-                <a href="categories.html" class="cta-button">Shop All Cycles</a>
-            </div>
-            <div class="hero-image">
-                
 
-<img src="images/cyclist-riding-bike-open-road-.webp" alt="Modern Road Cycle">
+        <div class="hero-content">
+            <h2>Ride Further. Live Better.</h2>
+            <p>Explore the finest selection of road, mountain, and hybrid cycles built for performance and adventure.</p>
+            <a class="cta-button" href="categories.html">Shop All Cycles</a>
+        </div>
 
+        <!-- CAROUSEL -->
+        <div class="carousel">
+
+            <div class="carousel-track" id="carouselTrack">
+                <img src="images/cyclist-riding-bike-open-road.webp" class="slide">
+                <img src="images/mountain bike cycle.jpg" class="slide">
+                <img src="images/hybrid bikecycle.avif" class="slide">
             </div>
+
+            <button class="carousel-btn prev" id="prevBtn">❮</button>
+            <button class="carousel-btn next" id="nextBtn">❯</button>
+
+            <div class="carousel-dots" id="carouselDots"></div>
+
+        </div>
+
+    </section>
+
+    <hr/>
         </section>
 
-        <hr>
+        <hr />
 
         <section class="featured-products container">
             <h3>Featured Cycles of the Month</h3>
             <div class="product-grid">
                 <article class="product-card">
-                    <img src="images/road bike cycle.jpg" alt="Velocity Pro Road Bike">
+                    <img src="images/road bike cycle.jpg" alt="Velocity Pro Road Bike" />
                     <h4>Velocity Pro</h4>
                     <p class="category">Road Cycling</p>
-                    <p class="price">1,899/-</p>
+                    <p class="price">12,899/-</p>
                     <a href="#" class="view-details">View Details</a>
                 </article>
 
                 <article class="product-card">
-                    <img src="images/mountain bike cycle.jpg" alt="Trail Master Mountain Bike">
+                    <img src="images/mountain bike cycle.jpg" alt="Trail Master Mountain Bike" />
                     <h4>Trail Master XT</h4>
                     <p class="category">Mountain Biking</p>
-                    <p class="price">2,450/-</p>
+                    <p class="price">24,450/-</p>
                     <a href="#" class="view-details">View Details</a>
                 </article>
 
                 <article class="product-card">
-                    <img src="images/hybrid bike cycle.avif" alt="City Commuter Hybrid Bike">
+                    <img src="images/hybrid bikecycle.avif" alt="City Commuter Hybrid Bike" />
                     <h4>City Commuter</h4>
                     <p class="category">Hybrid / City</p>
-                    <p class="price">799/-</p>
+                    <p class="price">17999/-</p>
                     <a href="#" class="view-details">View Details</a>
+                </article>
+
+                <article class="product-card">
+                    <img src="images/avon cycle.jpg" alt="Perfect Ride" />
+                    <h4>Avon Cycle</h4>
+                    <p class="category">All In One</p>
+                    <p class="price">14999/-</p>
+                    <a href="#" class="view-details">View Details</a>
+                </article>
+
+                <article class="product-card">
+                    <img src="images/ktm cycles.jpg" alt="Know The MArk" />
+                    <h4>Ktm Cycle</h4>
+                    <p class="category">Brand Value</p>
+                    <p class="price">20999/-</p>
+                    <a href="#" class="view-details">View Details</a> 
                 </article>
             </div>
         </section>
 
-        <hr>
+        <hr />
 
         <section class="quick-links container">
             <h3>Quick Links & Services</h3>
             <div class="link-modules">
-                <a href="events.html" class="module-card">
+                <a class="module-card" href="events.html">
                     <h4>Upcoming Events</h4>
                     <p>Join our group rides and workshops.</p>
                 </a>
-                <a href="blog.html" class="module-card">
+                <a class="module-card" href="blog.html">
                     <h4>Maintenance Tips</h4>
                     <p>Keep your cycle in peak condition.</p>
                 </a>
-                <a href="storelocator.html" class="module-card">
+                <a class="module-card" href="storelocator.html">
                     <h4>Find a Store</h4>
                     <p>Visit us for professional service.</p>
                 </a>
             </div>
         </section>
-        
     </main>
-    
-    <footer>
-        <p class="container">&copy; 2025 Surana Cycles. All rights reserved.</p>
-    </footer>
+
+    <!-- FontAwesome Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+<footer class="site-footer">
+
+    <div class="footer-container">
+
+        <!-- Column 1: About / Branding -->
+        <div class="footer-col">
+            <h2 class="footer-logo">Surana Cycles</h2>
+            <p>
+                Your trusted partner for bicycles, accessories & premium service since 1998.
+            </p>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div class="footer-col">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="categories.html">Categories</a></li>
+                <li><a href="brands.html">Brands</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <!-- Column 3: Contact Info -->
+        <div class="footer-col">
+            <h3>Contact Us</h3>
+            <p><strong>Address:</strong> Surana Cycles, Station Road, Pune, Maharashtra</p>
+            <p><strong>Email:</strong> <a href="mailto:info@suranacycles.com">info@suranacycles.com</a></p>
+            <p><strong>Phone:</strong> <a href="tel:+919876543210">+91 98765 43210</a></p>
+        </div>
+
+        <!-- Column 4: Social -->
+        <div class="footer-col">
+            <h3>Follow Us</h3>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+            </div>
+            <p class="contact-email">info@suranacycles.com</p>
+        </div>
+
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="footer-bottom">
+        © 2025 Surana Cycles | Ride With Passion 🚴‍♂️
+    </div>
+
+</footer>
+
 
     <script src="script.js"></script>
 </body>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Account - Surana Cycles</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="logo">
+    <a href="index.html">
+        <img src="images/Logo.jpg" alt="Surana Cycles">
+    </a>
+</div>
+
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="categories.html">Categories</a></li>
+                <li><a href="brands.html">Brands</a></li>
+                <li><a href="accessories.html">Accessories</a></li>
+                <li><a href="shimano.html">Shimano</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="storelocator.html">Store Locator</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="utility-nav">
+            <a href="user.html" class="user-link active">User / Account</a>
+            <button class="mobile-menu-toggle">Menu</button>
+        </div>
+    </header>
+
+    <main class="user-page container">
+
+        <section class="page-intro">
+            <h2>Your Surana Cycles Account</h2>
+            <p>Manage your orders, update your profile, and track your saved items.</p>
+        </section>
+
+        <div class="account-layout">
+
+            <nav class="account-nav">
+                <ul>
+                    <li><a href="#dashboard" class="account-tab active">Dashboard</a></li>
+                    <li><a href="#orders" class="account-tab">Order History</a></li>
+                    <li><a href="#profile" class="account-tab">Profile Details</a></li>
+                    <li><a href="#saved" class="account-tab">Saved Items</a></li>
+                    <li><a href="#login" class="account-tab">Log In / Register</a></li>
+                    <li><a href="#" class="logout-link">Log Out</a></li>
+                </ul>
+            </nav>
+
+            <section class="account-content">
+                
+                <div id="dashboard" class="tab-panel active">
+                    <h3>Welcome Back, [User Name]!</h3>
+                    <p>Quick overview of your account activity:</p>
+                    <div class="dashboard-stats">
+                        <div class="stat-card">
+                            <h4>Total Orders</h4>
+                            <p>5</p>
+                        </div>
+                        <div class="stat-card">
+                            <h4>Last Order Date</h4>
+                            <p>Nov 15, 2025</p>
+                        </div>
+                        <div class="stat-card">
+                            <h4>Saved Items</h4>
+                            <p>3</p>
+                        </div>
+                    </div>
+                    <a href="#orders" class="cta-button">Track Recent Order</a>
+                </div>
+                
+                <div id="login" class="tab-panel">
+                    <h3>Account Access</h3>
+                    <div class="auth-forms-container">
+                        <div class="login-form-area">
+                            <h4>Existing User Login</h4>
+                            <form class="auth-form" action="#" method="POST">
+                                <div class="form-group"><label for="login-email">Email</label><input type="email" id="login-email" required></div>
+                                <div class="form-group"><label for="login-pass">Password</label><input type="password" id="login-pass" required></div>
+                                <button type="submit" class="cta-button">Log In</button>
+                            </form>
+                        </div>
+                        
+                        <div class="register-form-area">
+                            <h4>New User Registration</h4>
+                            <form class="auth-form" action="#" method="POST">
+                                <div class="form-group"><label for="reg-name">Name</label><input type="text" id="reg-name" required></div>
+                                <div class="form-group"><label for="reg-email">Email</label><input type="email" id="reg-email" required></div>
+                                <div class="form-group"><label for="reg-pass">Password</label><input type="password" id="reg-pass" required></div>
+                                <button type="submit" class="cta-button secondary-button">Create Account</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                </section>
+        </div>
+    </main>
+
+     <!-- FontAwesome Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+<footer class="site-footer">
+
+    <div class="footer-container">
+
+        <!-- Column 1: About / Branding -->
+        <div class="footer-col">
+            <h2 class="footer-logo">Surana Cycles</h2>
+            <p>
+                Your trusted partner for bicycles, accessories & premium service since 1998.
+            </p>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div class="footer-col">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="categories.html">Categories</a></li>
+                <li><a href="brands.html">Brands</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <!-- Column 3: Contact Info -->
+        <div class="footer-col">
+            <h3>Contact Us</h3>
+            <p><strong>Address:</strong> Surana Cycles, Station Road, Pune, Maharashtra</p>
+            <p><strong>Email:</strong> <a href="mailto:info@suranacycles.com">info@suranacycles.com</a></p>
+            <p><strong>Phone:</strong> <a href="tel:+919876543210">+91 98765 43210</a></p>
+        </div>
+
+        <!-- Column 4: Social -->
+        <div class="footer-col">
+            <h3>Follow Us</h3>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+            </div>
+            <p class="contact-email">info@suranacycles.com</p>
+        </div>
+
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="footer-bottom">
+        © 2025 Surana Cycles | Ride With Passion 🚴‍♂️
+    </div>
+
+</footer>
+
+
+<script src="script.js"></script>
+</body>
+</html>
