@@ -102,3 +102,344 @@ body{text-align:center;font-family:Arial}
 form{max-width:400px;margin:auto;display:flex;flex-direction:column;gap:10px}
 input,textarea,button{padding:10px}
 button{background:#3b2f2f;color:#fff;border:none}
+
+.products{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
+}
+.card{
+  background:#fff;
+  border-radius:12px;
+  box-shadow:0 5px 20px rgba(0,0,0,0.1);
+  overflow:hidden;
+}
+.card img{
+  width:100%;
+  height:220px;
+  object-fit:cover;
+}
+.card-body{
+  padding:15px;
+}
+.price{
+  color:#8b5a2b;
+  font-weight:bold;
+}
+
+/* style.css */
+
+/* --- 1. VARIABLES & RESET (Leather Theme) --- */
+:root {
+  --primary: #8B4513;       /* Saddle Brown - Leather color */
+  --primary-dark: #5e2c0b;  /* Darker Brown for hover */
+  --bg-color: #fdfbf7;      /* Cream/Off-white background */
+  --text-main: #333;
+  --text-muted: #666;
+  --border: #e0d6cc;
+  --white: #ffffff;
+  --shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-main);
+  line-height: 1.6;
+}
+
+a { text-decoration: none; color: inherit; }
+ul { list-style: none; }
+
+/* --- 2. NAVBAR --- */
+.nav {
+  background: var(--white);
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.nav-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand a { display: flex; align-items: center; gap: 12px; }
+.logo { height: 45px; }
+.brand h1 { font-size: 1.4rem; color: var(--primary); font-weight: 700; }
+
+.nav-links a {
+  margin-left: 20px;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover, .nav-links a.active {
+  color: var(--primary);
+  font-weight: 600;
+}
+
+/* --- 3. SECTIONS & TITLES --- */
+.section-title {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 2rem;
+  color: var(--primary-dark);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.panel {
+  background: var(--white);
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+}
+
+/* --- 4. FILTERS BAR (Category Page Specific) --- */
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+  background: #f8f5f2;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  margin-bottom: 30px;
+}
+
+.filters label {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--primary-dark);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.filters select, .filters input {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+.filters select:focus, .filters input:focus {
+  border-color: var(--primary);
+}
+
+/* Price Range Styling */
+.price-wrap {
+  display: flex;
+  flex-direction: column;
+  min-width: 150px;
+}
+.price-wrap input[type=range] {
+  padding: 0;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+/* --- 5. PRODUCT GRID --- */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); /* Responsive Columns */
+  gap: 25px;
+}
+
+.product-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  position: relative;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(139, 69, 19, 0.15);
+  border-color: var(--primary);
+}
+
+.product-img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover; /* Image crop nahi hogi, adjust ho jayegi */
+  background: #eee;
+  border-bottom: 1px solid var(--border);
+}
+
+.product-info {
+  padding: 15px;
+  text-align: center;
+}
+
+.product-info h4 {
+  font-size: 1.1rem;
+  margin: 5px 0;
+  color: var(--text-main);
+}
+
+.product-cat {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  letter-spacing: 1px;
+}
+
+.product-price {
+  color: var(--primary);
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-top: 8px;
+}
+
+/* --- 6. MODAL / POPUP --- */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6); /* Black transparent overlay */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  padding: 20px;
+}
+
+.modal.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.modal-card {
+  background: var(--white);
+  padding: 25px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 800px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  position: relative;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+}
+
+#modalGallery img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+}
+
+/* Buttons */
+.btn {
+  padding: 10px 24px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: background 0.3s;
+}
+
+.btn-primary {
+  background: var(--primary);
+  color: white;
+}
+.btn-primary:hover { background: var(--primary-dark); }
+
+.btn-outline {
+  background: transparent;
+  border: 1px solid var(--text-muted);
+  color: var(--text-main);
+}
+.btn-outline:hover { border-color: var(--text-main); background: #eee; }
+
+/* --- 7. FOOTER --- */
+footer {
+  background: #1a1a1a;
+  color: #fff;
+  padding: 50px 20px;
+  margin-top: 60px;
+}
+
+.footer-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.logo-mark {
+  background: var(--primary);
+  color: #fff;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 1.2rem;
+}
+
+.socials a {
+  color: #fff;
+  margin-right: 15px;
+  opacity: 0.6;
+  transition: opacity 0.3s;
+}
+.socials a:hover { opacity: 1; color: var(--primary); }
+
+/* --- 8. RESPONSIVE (Mobile) --- */
+@media (max-width: 768px) {
+  .nav-inner {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .filters {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .filters label, .filters input, .filters select {
+    width: 100%;
+  }
+
+  .modal-card {
+    grid-template-columns: 1fr; /* Modal stack vertical on mobile */
+    max-height: 90vh;
+    overflow-y: auto;
+  }
+
+  #modalGallery img {
+    height: 200px;
+  }
+  
+  .footer-inner {
+    flex-direction: column;
+  }
+}

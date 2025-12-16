@@ -18,66 +18,107 @@
           <h1>Ambika Leather Manufacturing</h1>
           <p>Handcrafted leather goods — bags, purses, jackets & more</p>
         </div>
-      </div>
-      <div class="nav-links">
+        <div class="nav-links">
         <a href="index.html">Home</a>
-        <a href="category.html">Category</a>
+        <a href="category.html" class="active">Category</a> 
         <a href="about.html">About</a>
         <a href="contact.html">Contact</a>
-        <a class="cta" href="#category">Shop Now</a>
+        <a class="cta" href="category.html">Shop Now</a>
       </div>
     </div>
   </nav>
 
+  <section style="max-width:1200px; margin:40px auto; padding:0 20px;">
+    <h2 class="section-title">Our Products</h2>
+    <div class="panel">
+      
+      <div class="filters">
+        <label>Category: 
+          <select id="filterCategory">
+            <option value="all">All</option>
+            </select>
+        </label>
 
-<section id="category">
-<h2 class="section-title">Our Products</h2>
+        <label>Sort: 
+          <select id="sortBy">
+            <option value="featured">Featured</option>
+            <option value="price-asc">Price: Low → High</option>
+            <option value="price-desc">Price: High → Low</option>
+          </select>
+        </label>
 
+        <div class="price-wrap">
+          <label>Max Price: <span id="priceVal">₹20000</span></label>
+          <input id="priceRange" type="range" min="500" max="50000" value="20000">
+        </div>
 
-<div class="panel">
-<div class="filters">
-<label>Category:
-<select id="filterCategory"><option value="all">All</option></select>
-</label>
+        <input id="searchBox" placeholder="Search products..." style="flex:1;">
+      </div>
 
+      <div id="productGrid" class="grid"></div>
+    
+    </div>
+  </section>
 
-<label>Sort:
-<select id="sortBy">
-<option value="featured">Featured</option>
-<option value="price-asc">Price: Low → High</option>
-<option value="price-desc">Price: High → Low</option>
-</select>
-</label>
-
-
-<div class="price-wrap">
-<label>Max Price: <span id="priceVal">₹20000</span></label>
-<input id="priceRange" type="range" min="500" max="50000" value="20000">
-</div>
-
-
-<input id="searchBox" placeholder="Search products...">
-</div>
-
-
-<div id="productModal" class="modal" aria-hidden>
+  <div id="productModal" class="modal">
     <div class="modal-card">
       <div id="modalGallery"></div>
       <div>
         <h3 id="modalTitle"></h3>
-        <p id="modalDesc" style="color:var(--muted)"></p>
-        <p class="price" id="modalPrice"></p>
-        <p style="margin-top:8px"><strong>Category:</strong> <span id="modalCat"></span></p>
-        <div style="display:flex;gap:10px;margin-top:12px">
+        <p id="modalDesc" style="color:var(--text-muted); margin-bottom:10px;"></p>
+        <p class="product-price" id="modalPrice"></p>
+        <p><strong>Category:</strong> <span id="modalCat"></span></p>
+        <div style="margin-top:20px; display:flex; gap:10px;">
           <button id="addCart" class="btn btn-primary">Add to Cart</button>
           <button id="closeModal" class="btn btn-outline">Close</button>
         </div>
       </div>
     </div>
   </div>
-</section>
 
+  <footer>
+    <div class="footer-inner">
+      <div>
+        <div style="display:flex;gap:10px;align-items:center">
+          <div class="logo-mark">ALM</div>
+          <div>
+            <strong>Ambika Leather Manufacturing</strong>
+            <div style="font-size:13px;color:rgba(255,255,255,0.8)">Handcrafted since 1998</div>
+          </div>
+        </div>
+        <p style="margin-top:12px;color:rgba(255,255,255,0.7);max-width:360px">Premium handcrafted leather goods. Repairs, custom orders & B2B supply available.</p>
+      </div>
+      <div>
+        <div style="display:flex;gap:18px">
+          <div>
+            <strong>Quick Links</strong>
+            <div style="margin-top:8px;display:flex;flex-direction:column;gap:6px">
+              <a href="index.html">Home</a>
+              <a href="category.html">Category</a>
+              <a href="about.html">About</a>
+              <a href="contact.html">Contact</a>
+            </div>
+          </div>
+          <div>
+            <strong>Contact</strong>
+            <div style="margin-top:8px;color:rgba(255,255,255,0.8)">
+              <div>+91 98765 43210</div>
+              <div>Plot 12, Industrial Area, Pune</div>
+            </div>
+          </div>
+        </div>
+        <div style="margin-top:12px">
+          <strong>Follow us</strong>
+          <div class="socials" style="margin-top:8px">
+            <a href="#" title="facebook">Fb</a>
+            <a href="#" title="instagram">Inst</a>
+            <a href="#" title="twitter">Twit</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
 
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
